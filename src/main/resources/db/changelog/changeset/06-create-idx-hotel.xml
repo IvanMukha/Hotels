@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+
+    <changeSet id="add_indexes_for_hotel_histogram" author="Ivan_Mukha">
+        <createIndex tableName="hotel" indexName="idx_hotel_brand">
+            <column name="brand"/>
+        </createIndex>
+        <createIndex tableName="hotel" indexName="idx_hotel_city">
+            <column name="address_city"/>
+        </createIndex>
+        <createIndex tableName="hotel" indexName="idx_hotel_country">
+            <column name="address_country"/>
+        </createIndex>
+    </changeSet>
+</databaseChangeLog>

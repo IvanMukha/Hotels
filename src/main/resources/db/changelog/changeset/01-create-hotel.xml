@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+
+    <changeSet id="create_hotel" author="Ivan_Mukha">
+        <createTable tableName="hotel">
+            <column name="id" type="BIGINT">
+                <constraints primaryKey="true"/>
+            </column>
+
+            <column name="name" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="description" type="TEXT">
+                <constraints nullable="true"/>
+            </column>
+            <column name="brand" type="VARCHAR(50)">
+                <constraints nullable="true"/>
+            </column>
+
+            <column name="address_house_number" type="VARCHAR(50)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="address_street" type="VARCHAR(150)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="address_city" type="VARCHAR(150)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="address_country" type="VARCHAR(150)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="address_postcode" type="VARCHAR(20)">
+                <constraints nullable="false"/>
+            </column>
+
+            <column name="contact_phone" type="VARCHAR(50)">
+                <constraints nullable="true"/>
+            </column>
+            <column name="contact_email" type="VARCHAR(100)">
+                <constraints nullable="true"/>
+            </column>
+
+            <column name="check_in" type="TIME">
+                <constraints nullable="false"/>
+            </column>
+            <column name="check_out" type="TIME">
+                <constraints nullable="true"/>
+            </column>
+        </createTable>
+    </changeSet>
+</databaseChangeLog>
