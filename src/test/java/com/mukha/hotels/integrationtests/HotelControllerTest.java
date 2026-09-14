@@ -257,7 +257,7 @@ class HotelControllerTest {
         address.setStreet("Pobediteley Avenue");
         address.setCity(city);
         address.setCountry(country);
-        address.setPostcode("220004");
+        address.setPostCode("220004");
 
         Contacts contacts = new Contacts();
         contacts.setPhone("+375 17 309-80-00");

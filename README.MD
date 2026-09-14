@@ -89,7 +89,7 @@ Returns detailed information about a specific hotel.
     "street": "Pobediteley Avenue",
     "city": "Minsk",
     "country": "Belarus",
-    "postcode": "220004"
+    "postCode": "220004"
   },
   "contacts": {
     "phone": "+375 17 309-80-00",
@@ -132,7 +132,7 @@ Creates a new hotel.
     "street": "Pobediteley Avenue",
     "city": "Minsk",
     "country": "Belarus",
-    "postcode": "220004"
+    "postCode": "220004"
   },
   "contacts": {
     "phone": "+375 17 309-80-00",

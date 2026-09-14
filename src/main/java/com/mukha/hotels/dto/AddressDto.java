@@ -28,8 +28,8 @@ public record AddressDto(
         String country,
 
         @Schema(description = "Postal or ZIP code", example = "220004")
-        @NotBlank(message = "postcode is required")
-        @Size(max = 20, message = "postcode must not exceed {max} characters")
-        String postcode
+        @NotBlank(message = "postCode is required")
+        @Size(max = 20, message = "postCode must not exceed {max} characters")
+        String postCode
 ) {
 }

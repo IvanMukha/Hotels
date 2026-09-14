@@ -98,7 +98,7 @@ class HotelServiceImplTest {
         address.setStreet(ADDRESS_STREET);
         address.setCity(ADDRESS_CITY);
         address.setCountry(ADDRESS_COUNTRY);
-        address.setPostcode(ADDRESS_POSTCODE);
+        address.setPostCode(ADDRESS_POSTCODE);
 
         Contacts contacts = new Contacts();
         contacts.setPhone(CONTACT_PHONE);

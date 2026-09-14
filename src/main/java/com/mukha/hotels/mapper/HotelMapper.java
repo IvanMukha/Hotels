@@ -34,7 +34,7 @@ public interface HotelMapper {
                 address.getHouseNumber(),
                 address.getStreet(),
                 address.getCity(),
-                address.getPostcode(),
+                address.getPostCode(),
                 address.getCountry()
         ).trim().replaceAll("^,\\s*|,\\s*$", "");
     }
