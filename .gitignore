@@ -3,6 +3,7 @@ target/
 #.mvn/
 #mvnw
 #mvnw.cmd
+!.mvn/wrapper/maven-w
 !**/src/main/**/target/
 !**/src/test/**/target/
 
